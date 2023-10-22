@@ -1,0 +1,38 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+body{
+    position: absolute;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#judul{
+    background-color: rgb(158, 158, 51);
+    text-align: center;
+}
+
+p span{
+    font-weight: bold;
+}
+
+img{
+    float: left;
+    width: 23rem;
+    height: 17rem;
+    margin: 2%;
+    padding: 3%;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse:collapse;
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+}
