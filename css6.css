@@ -3,7 +3,7 @@ body {
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
     color: #333;
-    background-image: url(studio ghilbi.jpg);
+    background-image: url(studio\ ghilbi.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
