@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+
+/*navbar start*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 4%;
+    background-color: rgb(238, 205, 21) ;
+    border-bottom: 1px #000 solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar .logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.navbar .logo a{
+    margin-left: 1rem;
+    font-weight: 700;
+    color: #000;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar .logo img{
+    width: 4.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.navbar .navbar-nav{
+    display: flex;
+}
+
+.navbar .navbar-nav a{
+    display: inline-block ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+    color: rgb(238, 205, 21);
+    font-weight: 600;
+    font-size: 0.8rem;
+    background: 2rem #000;
+    border-radius: 20px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover{
+    color: #fffbfb;
+    font-size: 0.9rem;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid rgb(238, 205, 21);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+#menu{
+    display: none;
+}
+
+/* navbar-dropdown */
+.dropdown a{
+    padding: auto;    
+}
+
+.dropdown ul{
+    list-style-type: none;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown:hover .isi-dropdown {
+    display: block;
+}
+
+.isi-dropdown a:hover {
+    color: #fff !important;
+}
+
+.isi-dropdown {
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px #000;
+    z-index: 1;
+}
+
+.isi-dropdown a {
+    color: rgb(238, 205, 21) !important;
+    border-radius: 0;
+}
+
+.isi-dropdown a:hover {
+    color: #fffbfb !important;
+    background: rgb(238, 205, 21) !important;
+}
+
+.navbar .navbar-nav iframe{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
+/* navbar end */
+
+/* home section start */
+.home-section{
+    background-image: url(images/bgmoto2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.home-section .content{
+    margin-left: 6rem;
+    width: 70%;
+}
+
+.home-section .content h1{
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.home-section .content p{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+/* about section start*/
+.about{
+    background-image: linear-gradient(rgb(127, 155, 255), beige);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 6rem ;
+    padding-right: 6rem;
+}
+
+.about .about-tittle{
+    justify-content: center;
+    color: #000000;
+    font-size: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.about .about-content{
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+/* about section end */
+
+/* article start */
+.article{
+    background-color: beige ;
+    display: block;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 4rem;
+}
+
+.article .article-tittle{
+    justify-content: center;
+    color: #000;
+    font-size: 2rem;
+    padding-top: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+}
+
+.artikel .isi-artikel{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin:0 ;
+}
+
+.article .artikel .isi-artikel{
+    display: flex;
+    margin: 20px;
+}
+
+.article .artikel .isi-artikel .img img {
+    width: 200px;
+}
+
+.article .artikel .isi-artikel .a-container{
+    margin: 20px;
+}
+
+.article .artikel .isi-artikel .a-container .a-tittle{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color:#000
+}
+
+.article .artikel .isi-artikel .a-container .a-content {
+    margin-bottom: 20px;
+    font-size: 1.15rem;
+    font-weight: 530;
+}
+
+.article .artikel .isi-artikel .a-container .a-button  a{
+    color:rgb(238, 205, 21);
+    Padding :5px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    font-size: small;
+}
+
+.article .artikel .isi-artikel .a-container .a-button:hover a {
+    background-color:rgb(238, 205, 21) ;
+    border: 1px solid #000;
+    color: #000;
+}
+
+/*article end*/
+
+/* gallery section start */
+.gallery{
+    padding: 50px;
+    background-image: linear-gradient(beige,rgb(127, 155, 255));
+    background-size: cover;
+}
+
+.gallery h2{
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.gallery h2::after{
+    content: "";
+    border-bottom: 5px solid rgb(238, 205, 21); 
+    width: 60px;
+    display: block;
+    margin: 20px auto;
+}
+
+.gallery .tipecustom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two equal-width columns */
+    gap: 30px; /* Gap between items */
+}
+
+.gallery .tipecustoum .tipe-custom {
+    text-align: center;
+    border: 1px solid rgb(238, 205, 21) ;
+    padding: 20px;
+    margin: 20px;
+}
+
+.gallery .tipecustom img{
+    display: grid;
+    width: 100%;
+    height: 320px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20%;
+}
+
+.gallery .tipecustom img:hover{
+    transform: scale(1.1);
+    transition: all 0.55s ease-in-out;
+}
+
+.gallery .tipecustom #jenis h3{
+    font-size: 25px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery .tipecustom #isi-jenis p{
+    font-size: 15px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+/* gallery sevtion end*/
+
+/*comments section start*/
+.form-comment {
+    padding: 50px 0px 50px 0px;
+    background-image: linear-gradient(rgb(127, 155, 255), beige);
+}
+
+.form-comment h4 {
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: 2.0rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form-comment form {
+    text-align: left;
+    padding-left: 30%;
+    padding-top: 30px;
+}
+
+.form button {
+    border: none;
+    background-color: #000;
+    padding: 6px 8px;
+    color: rgb(238, 205, 21);
+    border-radius: 20px;
+}
+
+.form button:hover {
+    background-color:rgb(238, 205, 21) ;
+    border: 1px solid #000;
+    color: #000;
+}
+/*comments section end*/
+
+/* contact section start*/
+.contact-section {
+    padding: 50px 0px 50px 0px;
+    background-color: beige;
+    text-align: center;
+}
+
+.contact h5 {
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: 2.0rem;
+}
+
+section .logo-contact a {
+    padding-top: 10px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 2rem;
+}
+/*contact section end*/
+
+/* Footer */
+footer {
+    padding: 1.5rem;
+    background-color: rgb(238, 205, 21);
+    color: black;
+    text-decoration: none;
+    min-width: 20vh;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-footer {
+    gap: 30px;
+}
+
+.section-footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.section-credit {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+} 
